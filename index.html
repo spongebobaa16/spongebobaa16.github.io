@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>B09901064</title>
+		<link rel="icon" href="myico2.ico">
+		<audio controls autoplay loop hidden>
+			<source src="mysound.mp3" type="audio/ogg" autoplay=true>
+		</audio>	
+		<style>
+			a:hover{
+				color: red;
+			}
+		</style>
+		
+		<script>
+		
+		function gt(){
+			var TimeNow = new Date();
+			var yyyy = TimeNow.toLocaleDateString().slice(0,4)
+			var MM = (TimeNow.getMonth()+1<10 ? '0' : '')+(TimeNow.getMonth()+1);
+			var dd = (TimeNow.getDate()<10 ? '0' : '')+TimeNow.getDate();
+			var h = (TimeNow.getHours()<10 ? '0' : '')+TimeNow.getHours();
+			var m = (TimeNow.getMinutes()<10 ? '0' : '')+TimeNow.getMinutes();
+			var s = (TimeNow.getSeconds()<10 ? '0' : '')+TimeNow.getSeconds(); 
+			var date = MM + '-' + dd + '-' + yyyy + ' ' + h + ":" + m + ":" + s;
+			document.getElementById("demo").innerHTML = date;
+			var timeoutId = setTimeout(gt(),1000);
+		}
+		
+		</script>
+		
+	</head>
+	<body onload="gt()">
+		
+		
+		<h1>Highschool</h1>
+		<a href="https://tcfsh.tc.edu.tw/">Taichung First Senior Highschool</a>
+		<h1>Major</h1>
+		<a href="https://web.ee.ntu.edu.tw/">NTUEE</a>
+		<h1>Hobby</h1>
+			<h2>Billiard</h2>
+			<a href="https://www.wpa-pool.com/">World Pool-Billiard Association</a><br>
+			<a href="https://www.youtube.com/watch?v=QfKEyPtbVas">TOP 10 shots! Mosconi cup 2017</a>
+			<h2>Snooker</h2>
+			<a href="https://wst.tv/">World Snooker tour</a><br>
+			<a href="https://www.youtube.com/watch?v=2S5viSeKOZY">Top 20 Crucible Shots of 2021</a>
+			<h2>League of Legend</h2>
+			<a href="https://lol.garena.tw/">LOL official website</a><br>
+		<h1>My pic</h1>
+		<img src="mypic.jpg" width="500">
+		
+		<h1>Current Time </h1>
+		<p id="demo"></p>
+		
+				
+	</body>
+</html>	
