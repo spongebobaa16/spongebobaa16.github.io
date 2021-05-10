@@ -25,8 +25,9 @@
 			var s = (TimeNow.getSeconds()<10 ? '0' : '')+TimeNow.getSeconds(); 
 			var date = MM + '-' + dd + '-' + yyyy + ' ' + h + ":" + m + ":" + s;
 			document.getElementById("demo").innerHTML = date;
-			var timeoutId = setTimeout(gt(),1000);
+			
 		}
+		setInterval(gt,1000);
 		
 		</script>
 		
